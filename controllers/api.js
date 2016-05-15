@@ -17,7 +17,7 @@ module.exports = {
   },
 
   show: function(req, res){
-    Talk.findOne({_id: req.params.id}, 'firstname lastname email', function(err, talk){
+    Talk.findOne({_id: req.params.id}, function(err, talk){
       if(err) console.log(err)
       res.json(talk)
     })
