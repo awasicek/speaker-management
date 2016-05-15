@@ -1,0 +1,20 @@
+{
+  "name": "speaker-management",
+  "version": "1.0.0",
+  "description": "Speaker management application for SanDiego.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awasicek/speaker-management.git"
+  },
+  "author": "Andrew Wasicek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awasicek/speaker-management/issues"
+  },
+  "homepage": "https://github.com/awasicek/speaker-management#readme"
+}
