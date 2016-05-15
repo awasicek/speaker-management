@@ -4,11 +4,11 @@ var
   logger = require('morgan'),
   mongoose = require('mongoose'),
   bodyParser = require('body-parser'),
-  // apiRoutes = require('./routes/api.js'),
+  apiRoutes = require('./routes/api.js'),
   path = require('path')
 
 mongoose.connect('mongodb://localhost/speaker-management', function(err){
-  if(err) return console.log("Errror connecting.")
+  if(err) return console.log("Error connecting.")
   console.log("Connected to MongoDB (speaker-management)")
 })
 
@@ -26,7 +26,7 @@ app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
-// app.use('/api', apiRoutes)
+app.use('/api', apiRoutes)
 
 //server listening
 
