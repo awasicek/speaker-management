@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/awasicek/speaker-management/issues"
   },
-  "homepage": "https://github.com/awasicek/speaker-management#readme"
+  "homepage": "https://github.com/awasicek/speaker-management#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.17",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7"
+  }
 }
