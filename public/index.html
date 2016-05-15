@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="speakerManagement">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SanDiego.js Speaker Management</title>
+    <!-- LIBRARIES -->
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.css">
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-ui-router.js"></script>
+    <!-- ANGULAR APP  -->
+    <script src="/js/app.js"></script>
+    <!-- <script src="/js/mainCtrl.js"></script>
+    <script src="/js/userService.js"></script>
+    <script src="/js/detailCtrl.js"></script> -->
   </head>
   <body>
-<h1>Speaker Management</h1>
+    <!-- nav bar begin -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="users">Users</a></li>
+            <li><a ui-sref="newUser">Create Users</a></li>
+          </ul>
+        </div>
+  </nav>
+  <!-- nav bar end -->
+
+  <h1>Speaker Management</h1>
+
+  <div class='container'>
+    <div ui-view></div>
+  </div>
   </body>
 </html>
