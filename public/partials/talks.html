@@ -1,0 +1,6 @@
+<div class="list-group">
+  <div ng-repeat="talk in main.talks">
+    <a ui-sref="detail({id: talk._id})"  class="list-group-item">{{talk.firstName}} {{talk.lastName}}</a>
+    <button ng-click="main.destroy(talk._id, $index)">Delete</button>
+  </div>
+</div>

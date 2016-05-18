@@ -11,18 +11,18 @@
           url: '/',
           templateUrl: '/partials/home.html'
         })
-        .state('users', {
-          url: '/users',
-          templateUrl: '/partials/users.html',
+        .state('talks', {
+          url: '/talks',
+          templateUrl: '/partials/talks.html',
           controller: 'MainController as main'
         })
-        .state('newUser', {
-          url: '/users/new',
+        .state('newTalk', {
+          url: '/talk/new',
           templateUrl: '/partials/new.html',
           controller: "MainController as main"
         })
         .state('detail', {
-          url: '/users/:id',
+          url: '/talk/:id',
           templateUrl: '/partials/detail.html',
           controller: 'DetailController as detail'
         })

@@ -1,0 +1,17 @@
+<div ng-if="!detail.editing">
+  <h1>Details</h1>
+  <h2>{{detail.talk.firstName}} {{detail.talk.lastName}}</h2>
+  <h2>{{detail.talk.email}}</h2>
+  <button ng-click="detail.edit()">Edit Details</button>
+</div>
+<form ng-if="detail.editing" ng-submit="detail.update()">
+  <input ng-model="detail.editingTalk.firstName" type="text" placeholder="First Name">
+  <input ng-model="detail.editingTalk.lastName" type="text" placeholder="Last Name">
+  <input ng-model="detail.editingTalk.twitterHandle" type="text" placeholder="Twitter Handle">
+  <input ng-model="detail.editingTalk.talkTitle" type="text" placeholder="Talk Title">
+  <input ng-model="detail.editingTalk.meetupDate" type="text" placeholder="Meetup Date">
+  <input ng-model="detail.editingTalk.comments" type="text" placeholder="Comments">
+  <input ng-model="detail.editingTalk.email" type="text" placeholder="Email">
+  <button type="submit">Update Talk</button>
+  <button ng-click="detail.editing=false">Cancel</button>
+</form>

@@ -1,0 +1,11 @@
+<h1>Create New Talk</h1>
+<form ng-submit="main.create()">
+  <input ng-model="main.newTalk.firstName" type="text" placeholder="First Name">
+  <input ng-model="main.newTalk.lastName" type="text" placeholder="Last Name">
+  <input ng-model="main.newTalk.email" type="text" placeholder="Email">
+  <input ng-model="main.newTalk.twitterHandle" type="text" placeholder="Twitter Handle">
+  <input ng-model="main.newTalk.talkTitle" type="text" placeholder="Talk Title">
+  <input ng-model="main.newTalk.meetupDate" type="text" placeholder="Meetup Date">
+  <input ng-model="main.newTalk.comments" type="text" placeholder="Comments">
+  <button type="submit">Create Talk</button>
+</form>
